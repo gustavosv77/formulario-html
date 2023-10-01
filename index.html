@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    
+    <main>
+        <section id="box">
+            <header>
+                <h1><a>Formulário de Candidatos</a></h1>
+            </header>
+            <div>
+                <form class="candidatos" action="" method="post">
+                    <label for="nome">Nome</label>
+                    <input minlength="3" type="text" name="nome" id="nome" placeholder="Digite seu Nome:" required>
+                    <label for="email">Email</label>
+                    <input minlength="8" type="email" name="email" id="email" placeholder="Digite seu Email:" required>
+                    <label for="tel">Telefone</label>
+                    <input maxlength="13" type="tel" name="tel" id="tel" placeholder="(xx)xxxxx-xxxx" required>
+                    <label for="data">Nascimento</label>
+                    <input type="date" name="data" id="data" placeholder="Digite sua data de nascimento:" required>
+                    <label for="prof">Profissão</label>
+                    <input minlength="3" type="text" name="prof" id="prof" placeholder="Digite sua Profissão:" required>
+
+                    <button id="enviar" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="./assets/script.js"></script>
+</html>
